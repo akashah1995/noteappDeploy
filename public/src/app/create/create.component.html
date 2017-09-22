@@ -1,0 +1,16 @@
+
+<div id = "box">
+  <form #formData = 'ngForm' (submit) = 'create()'>
+      <p>Note: <input
+      type = "text"
+      name = "content"
+      minlength="3"
+      required
+      [(ngModel)] = 'note.content'
+      #content = 'ngModel'>
+      <input id = "button" type = "submit" value = "Add Note" [disabled] = "!formData.valid"></p>
+      <p><span *ngIf = 'content.errors' class = 'red'> Note Needs at least 3 Characters</span></p>
+  </form>
+
+
+</div>

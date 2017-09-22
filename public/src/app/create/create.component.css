@@ -1,0 +1,18 @@
+.red{
+    color:red;
+}
+
+#box{
+    width: 900px;
+    height: 100px;
+    border-style: solid;
+}
+
+input{
+    width: 700px;
+    height: 30px;
+}
+
+#button{
+    width: 90px;
+}
